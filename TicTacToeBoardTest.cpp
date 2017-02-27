@@ -18,3 +18,18 @@ TEST(TicTacToeBoardTest, sanityCheck)
 {
 	ASSERT_TRUE(true);
 }
+
+/* Create a TTTB. Place X in center  */
+TEST(TicTacToeBoardTest,  create)
+{
+	TicTacToeBoard tTTboard;
+	SetUp();
+	ASSERT_TRUE('X' == tTTboard.placePiece(1,1));
+	TearDown();
+}
+
+/* Make board. Place X in center. Place O in top left corner  */
+
+/* Make board. getWinner() should return blank  */
+
+/* Make board. Place X in 3, 0. Should return invalid  */
